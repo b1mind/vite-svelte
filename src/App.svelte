@@ -12,20 +12,18 @@
 </main>
 
 <style type="scss">
-  :root {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-      Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  }
+  @use 'styles/variables' as *;
 
   main {
     text-align: center;
     padding: 1em;
     margin: 0 auto;
-  }
 
-  img {
-    height: 16rem;
-    width: 16rem;
+    img {
+      height: 16rem;
+      width: 16rem;
+      border: 1px solid red;
+    }
   }
 
   h1 {
@@ -36,21 +34,19 @@
     line-height: 1.1;
     margin: 2rem auto;
     max-width: 14rem;
+    @media (max-width: $minWidthSml) {
+      max-width: none;
+      background-color: plum;
+    }
   }
 
   p {
     max-width: 14rem;
     margin: 1rem auto;
     line-height: 1.35;
-  }
-
-  @media (min-width: 480px) {
-    h1 {
+    @media (max-width: $minWidthSml) {
       max-width: none;
-    }
-
-    p {
-      max-width: none;
+      color: red;
     }
   }
 </style>

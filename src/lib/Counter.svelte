@@ -1,6 +1,5 @@
 <script>
   import { getStore } from './hmr-stores'
-  /** @type { string } */
   export let id
 
   const count = getStore(id, 0)
@@ -32,6 +31,6 @@
   }
 
   button:active {
-    background-color: rgba(255, 62, 0, 0.2);
+    background-color: black;
   }
 </style>
