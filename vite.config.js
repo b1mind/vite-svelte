@@ -6,4 +6,5 @@ import { sveltePreprocess } from 'svelte-preprocess/dist/autoProcess'
 export default defineConfig({
   plugins: [svelte({ preprocess: sveltePreprocess() })],
   server: { port: 9001 },
+  // resolve: { conditions: 'browser' },
 })

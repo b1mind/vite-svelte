@@ -12,7 +12,7 @@
   Clicks: {$count}
 </button>
 
-<style>
+<style type="scss">
   button {
     font-family: inherit;
     font-size: inherit;
@@ -24,13 +24,13 @@
     outline: none;
     width: 200px;
     font-variant-numeric: tabular-nums;
-  }
 
-  button:focus {
-    border: 2px solid #ff3e00;
-  }
+    &:focus {
+      border: 2px solid #ff3e00;
+    }
 
-  button:active {
-    background-color: black;
+    &:active {
+      background-color: black;
+    }
   }
 </style>
