@@ -1,14 +1,12 @@
 <script>
   import logo from './assets/svelte.png'
   import Counter from './lib/Counter.svelte'
-  // import { login } from '@inrupt/solid-client-authn-browser'
-  // console.log(login)
-
-  import { getSolidDataset, saveSolidDatasetAt } from '@inrupt/solid-client'
-  console.dir(getSolidDataset)
 </script>
 
 <main>
+  <svg viewBox="0 0 400 400">
+    <rect fill="red" cx="50" cy="50" width="50" height="50" />
+  </svg>
   <img src={logo} alt="Svelte Logo" />
   <h1>Hello world!</h1>
 

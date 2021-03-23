@@ -13,13 +13,8 @@
     "svelte-preprocess": "^4.6.9",
     "vite": "^2.1.0"
   },
-  "dependencies": {
-    "@inrupt/solid-client": "^1.5.0",
-    "@inrupt/solid-client-authn-browser": "^1.7.2",
-    "@inrupt/vocab-common-rdf": "^0.7.2"
-  },
+  "dependencies": {},
   "browserslist": [
-    "defaults",
     "last 2 version"
   ]
 }
