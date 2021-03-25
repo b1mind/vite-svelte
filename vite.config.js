@@ -7,7 +7,9 @@ export default defineConfig({
   plugins: [svelte({ preprocess: sveltePreprocess() })],
   server: { port: 9001 },
   define: {
-    // 'process.env': {},
-    // global: {},
+    // global: 'window',
+  },
+  build: {
+    //rollup/es build stuffs here
   },
 })

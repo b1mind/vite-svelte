@@ -1,17 +1,23 @@
 <script>
+  import { onMount } from 'svelte'
+  import { gsap } from 'gsap'
+  // import ScrollTrigger from 'gsap/ScrollTrigger'
+  // gsap.registerPlugin(ScrollTrigger)
+
   import logo from './assets/svelte.png'
   import Counter from './lib/Counter.svelte'
+
+  onMount(() => {
+    gsap.from('h1', { x: 200 })
+  })
 </script>
 
 <main>
-  <svg viewBox="0 0 400 400">
-    <rect fill="red" cx="50" cy="50" width="50" height="50" />
-  </svg>
   <img src={logo} alt="Svelte Logo" />
   <h1>Hello world!</h1>
 
   <Counter id="0" />
-  <p>lets get this show rolling</p>
+  <p>lets get this show on the road</p>
 </main>
 
 <style type="scss">

@@ -1,6 +1,6 @@
 Todo:
-  ☐ add gsap
-  ☐ add postCss stuffs
+  ✔ add gsap @done(21-03-25 13:02)
+  ✔ add postCss stuffs @done(21-03-25 13:02)
   ☐ add svg fav icon
   ☐ better default styles/starter files
   ☐ deploy script for gh-pages
