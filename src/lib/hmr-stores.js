@@ -6,6 +6,7 @@ import { writable } from 'svelte/store'
  * @type { Record<string, import('svelte/store').Writable<any>> }
  */
 let stores = {}
+export const valueStore = writable(0)
 
 /**
  * @template T

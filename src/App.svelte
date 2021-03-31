@@ -1,8 +1,6 @@
 <script>
   import { onMount } from 'svelte'
   import gsap from 'gsap'
-  import { ScrollTrigger } from 'gsap/ScrollTrigger'
-  gsap.registerPlugin(ScrollTrigger)
 
   import logo from './assets/svelte.png'
   import Counter from './lib/Counter.svelte'
@@ -10,14 +8,17 @@
   onMount(() => {
     gsap.from('h1', { x: 200 })
   })
-  let counter = 0
+
+  let inputValue = 'some text'
 </script>
 
 <main>
   <img src={logo} alt="Svelte Logo" />
   <h1>Hello world!</h1>
 
-  <button on:click={() => counter++}> {counter} </button>
+  <input bind:value={inputValue} type="text" />
+
+  <p>{inputValue}</p>
 
   <Counter id="0" />
   <p>lets get this show on the road</p>
@@ -30,6 +31,7 @@
     text-align: center;
     padding: 1em;
     margin: 0 auto;
+    color: white;
 
     img {
       height: 16rem;

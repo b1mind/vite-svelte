@@ -1,16 +1,29 @@
 <script>
-  import { getStore } from './hmr-stores'
+  import { getStore, valueStore } from './hmr-stores'
+
   export let id
 
   const count = getStore(id, 0)
   const increment = () => {
     $count += 1
   }
+
+  let counter = 0
+
+  const clickCounter = () => counter++
+
+  $: bigCounter = $count + counter
 </script>
 
 <button {id} on:click={increment}>
   Clicks: {$count}
 </button>
+
+<button on:click={clickCounter}> {counter} </button>
+
+<p>Reactive with store: {$valueStore + bigCounter}</p>
+
+<p>Reactive variable: {bigCounter}</p>
 
 <style type="scss">
   button {
