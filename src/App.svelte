@@ -1,5 +1,7 @@
 <script>
   import { onMount } from 'svelte'
+  import { getDefaultSession } from '@inrupt/solid-client-authn-browser'
+  console.dir(getDefaultSession)
   import gsap from 'gsap'
 
   import logo from './assets/svelte.png'
